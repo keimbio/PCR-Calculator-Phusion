@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCR Master Mix Calculator</title>
+    <title>Phusion PCR Master Mix Calculator</title>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -278,7 +278,7 @@
 <body>
     <div class="calculator">
         <div class="header">
-            <h1>PCR Master Mix Calculator</h1>
+            <h1>Phusion PCR Master Mix Calculator</h1>
         </div>
         
         <div class="divider"></div>
@@ -339,24 +339,24 @@
         // PCR component volumes (easily customizable)
         const pcrComponents = {
             25: {  // 25 µL reaction
-                'Buffer': 5.0,           // 5X Phusion HF or GC Buffer -> 1X final
-                'dNTPs': 0.5,            // 10 mM dNTPs -> 200 µM final  
-                'Fwd primer': 1.25,      // 10 µM Forward Primer -> 0.5 µM final
-                'Rev primer': 1.25,      // 10 µM Reverse Primer -> 0.5 µM final
-                'DMSO': 0.75,            // Optional -> 3% final
-                'Polymerase': 0.25,      // Phusion DNA Polymerase -> 1.0 units final
-                'H2O': 15.75,            // Nuclease-free water (to 25 µL minus DNA)
-                'DNA': 'variable'        // Template DNA (< 250 ng)
+                '5X Phusion Buffer': 5.0,   // 5X Phusion HF or GC Buffer -> 1X final
+                '10 mM dNTPs': 0.5,         // 10 mM dNTPs -> 200 µM final  
+                '10 µM Fwd primer': 1.25,   // 10 µM Forward Primer -> 0.5 µM final
+                '10 µM Rev primer': 1.25,   // 10 µM Reverse Primer -> 0.5 µM final
+                'DMSO': 0.75,               // Optional -> 3% final
+                'Phusion Polymerase': 0.25, // Phusion DNA Polymerase -> 1.0 units final
+                'H2O': 15.75,               // Nuclease-free water (to 25 µL minus DNA)
+                'DNA': 'variable'           // Template DNA (< 250 ng)
             },
             50: {  // 50 µL reaction
-                'Buffer': 10.0,          // 5X Phusion HF or GC Buffer -> 1X final
-                'dNTPs': 1.0,            // 10 mM dNTPs -> 200 µM final
-                'Fwd primer': 2.5,       // 10 µM Forward Primer -> 0.5 µM final
-                'Rev primer': 2.5,       // 10 µM Reverse Primer -> 0.5 µM final
-                'DMSO': 1.5,             // Optional -> 3% final
-                'Polymerase': 0.5,       // Phusion DNA Polymerase -> 1.0 units final
-                'H2O': 31.5,             // Nuclease-free water (to 50 µL minus DNA)
-                'DNA': 'variable'        // Template DNA (< 250 ng)
+                '5X Phusion Buffer': 10.0,  // 5X Phusion HF or GC Buffer -> 1X final
+                '10 mM dNTPs': 1.0,         // 10 mM dNTPs -> 200 µM final
+                '10 µM Fwd primer': 2.5,    // 10 µM Forward Primer -> 0.5 µM final
+                '10 µM Rev primer': 2.5,    // 10 µM Reverse Primer -> 0.5 µM final
+                'DMSO': 1.5,                // Optional -> 3% final
+                'Phusion Polymerase': 0.5,  // Phusion DNA Polymerase -> 1.0 units final
+                'H2O': 31.5,                // Nuclease-free water (to 50 µL minus DNA)
+                'DNA': 'variable'           // Template DNA (< 250 ng)
             }
         };
 
